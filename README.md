@@ -29,7 +29,7 @@ THEN a password is generated that matches the selected criteria<br/>
 WHEN the password is generated<br/>
 THEN the password is either displayed in an alert or written to the page<br/>
 # Installation <br/>
-Deployment: 
+Deployment: https://aashpaash.github.io/Password-Generator/
 Repository: https://github.com/aashpaash/Password-Generator
 
 # Screenshots <br/>
