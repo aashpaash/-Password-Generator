@@ -33,6 +33,7 @@ Deployment: https://aashpaash.github.io/Password-Generator/
 Repository: https://github.com/aashpaash/Password-Generator
 
 # Screenshots <br/>
+![Screenshot](./Assets/JS%20Screenshot.png)
 
 # License<br/>
 Please refer to the LICENSE in the repo.
