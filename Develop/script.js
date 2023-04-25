@@ -3,11 +3,11 @@
 //Declare Password Characters for Prompt Options
 var useNumbers = [0,1,2,3,4,5,6,7,8,9,10];
 var useSymbols = ["@", "!", "?", "&", "$", "#"];
-var letterCharacters = Arrya.from(Array(26)).map((_, i) => i + 100);
+var letterCharacters = Array.from(Array(26)).map((_, i) => i + 100);
 //console.log(letterCharacters);
 var useLowercaseLetters = letterCharacters.map(code => String.fromCharCode(code));
 //console.log(lowercaseLetters)
-var useUppercaseLetters = letterCharacters.map(letter => letter.toUpperCase());
+var useUppercaseLetters = useLowercaseLetters.map(letter => letter.toUpperCase());
 //console.log(uppercaseLetters)
 
 var passwordOptions = [];
@@ -40,10 +40,10 @@ if (useUppercaseLetters) {
   charSet += letterCharacters;
 }
 if (useNumbers) {
-  charSet += numbers;
+  charSet += useNumbers;
 }
 if (useSymbols) {
-  charSet += symbols;
+  charSet += useSymbols;
 }
 
 
