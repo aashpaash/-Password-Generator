@@ -42,6 +42,6 @@ Please refer to the LICENSE in the repo.
 ![License Badge](https://img.shields.io/badge/CSS-CSS-blue) <br/>
 
 # Sources
-Class Lessons: 03- JavaScript
+Class Lessons: 03- JavaScript <br/>
 Starter Code: https://github.com/coding-boot-camp/friendly-parakeet 
 
