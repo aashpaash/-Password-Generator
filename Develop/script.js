@@ -13,16 +13,32 @@ var uppercaseLetters = letterCharacters.map(letter => letter.toUpperCase());
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-let passwordLength = parseInt(prompt("Please select character amount. (Min: 8, Max: 128)"));
+// Password Requirement Prompts
+var passwordLength = parseInt(prompt("How long would you like your password to be? (Min: 8, Max: 128)"));
+var useLowercaseLetters = window.confirm("Would you like to use lower case letters in your password?");
+var useUppercaseLetters = window.confirm("Would you like to use upper case letters in your password?");
+var useNumbers = window.confirm("Would you like to use numbers in your password?");
+var useSymbols = window.confirm("Would you like to use symbols in your password?");
 
+var charSet = "";
+if (useLowercaseLetters) {
+  charSet += letterCharacters;
+}
+if (useUppercaseLetters) {
+  charSet += letterCharacters;
+}
+if (useNumbers) {
+  charSet += numbers;
+}
+if (useSymbols) {
+  charSet += symbols;
+}
 
 function generatePassword() {
   let password = "";
   for (let i = 0; i < passwordLength; i++) {
     password += charSet.charAt(Math.floor(Math.random() * charSet.length));
 }
-
-
 
 // Write password to the #password input
 function writePassword() {
@@ -43,4 +59,4 @@ if (newPassword) {
   generatePassword();
 };
 
-generatePassword();
+generatePassword()};
