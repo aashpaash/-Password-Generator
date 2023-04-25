@@ -20,4 +20,4 @@
 Please refer to the LICENSE in the repo.
 
 ![License Badge](https://img.shields.io/badge/JavaScript-JS-blue)
-!# Password-Generator
+
